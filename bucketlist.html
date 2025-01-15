@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Slab:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <h1>My Bucket List</h1>
+            <h2>Turning Dreams into Adventures</h2>
+        </div>
+        <div class="dot small"></div>
+        <div class="dot large"></div>
+    </header>
+    
+    
+    
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search your bucket list..." id="searchInput" oninput="filterBucketList()">
+    </div>
+
+    <div class="add-item-form">
+        <input type="text" id="bucketTitle" placeholder="Bucket List Title" oninput="convertToUppercase(this)">
+        <textarea id="bucketDescription" placeholder="Description"></textarea>
+        <button class="primary-btn" onclick="addBucketItem()">Add Item</button>
+    </div>
+
+    <div class="container" id="bucketListContainer">
+        <!-- Dynamic bucket items will appear here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Bucket List</p>
+    </footer>
+
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    <script src="script.js"></script>
+</body>
+</html>
